@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def swimmer_list(request):
+    return render(request, template_name='core/swimmer_list.html')
