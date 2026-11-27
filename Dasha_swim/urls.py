@@ -17,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from core.views import swimmer_list
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('swimmer_list/', swimmer_list),
 ]
